@@ -1,84 +1,57 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1956investigations,
+@article{garcin2023level,
+  abbr={Preprint},
   bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
-}
-
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
-
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
+  title={How the level sampling process impacts zero-shot generalisation in deep reinforcement learning},
+  author={Garcin, Samuel and Doran, James and Guo, Shangmin and Lucas, Christopher G and Albrecht, Stefano V},
+  journal={Under review},
+  year={2024},
+  abstract={A key limitation preventing the wider adoption of autonomous agents trained via deep reinforcement learning (RL) is their limited ability to generalise to new environments, even when these share similar characteristics with environments encountered during training. In this work, we investigate how a non-uniform sampling strategy of individual environment instances, or levels, affects the zero-shot generalisation (ZSG) ability of RL agents, considering two failure modes: overfitting and over-generalisation. As a first step, we measure the mutual information (MI) between the agent's internal representation and the set of training levels, which we find to be well-correlated to instance overfitting. In contrast to uniform sampling, adaptive sampling strategies prioritising levels based on their value loss are more effective at maintaining lower MI, which provides a novel theoretical justification for this class of techniques. We then turn our attention to unsupervised environment design (UED) methods, which adaptively generate new training levels and minimise MI more effectively than methods sampling from a fixed set. However, we find UED methods significantly shift the training distribution, resulting in over-generalisation and worse ZSG performance over the distribution of interest. To prevent both instance overfitting and over-generalisation, we introduce self-supervised environment design (SSED). SSED generates levels using a variational autoencoder, effectively reducing MI while minimising the shift with the distribution of interest, and leads to statistically significant improvements in ZSG over fixed-set level sampling strategies and UED methods.},
+  arXiv={2310.03494},
+  poster={ssed_iclr24/Poster_SSED_ALOE_neurips23.pdf},
   selected={true}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@article{9143181,
+  bibtex_show={True},
+  abbr={TCST},
+  abstract={We consider the multi-agent collision avoidance problem for a team of wheeled mobile robots. Recently, a local solution to this problem, based on a game-theoretic formulation, has been provided and validated via numerical simulations. Due to its local nature, the result is not well-suited for online applications. In this article, we propose a novel hybrid implementation of the control inputs that yields a control strategy suited for the online navigation of mobile robots. Moreover, subject to a certain dwell time condition, the resulting trajectories are globally convergent. The control design is demonstrated both via simulations and experiments.},
+  author={Cappello, Domenico and Garcin, Samuel and Mao, Z and Sassano, Mario and Paranjape, Aditya and Mylvaganam, Thulasi},
+  journal={IEEE Transactions on Control Systems Technology},
+  title={A Hybrid Controller for Multi-Agent Collision Avoidance via a Differential Game Formulation},
+  year={2021},
+  volume={29},
+  number={4},
+  pages={1750-1757},
+  doi={10.1109/TCST.2020.3005602},
+  pdf={https://spiral.imperial.ac.uk/bitstream/10044/1/81127/2/FINAL%20VERSION.pdf},
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@inproceedings{9636279,
+  bibtex_show={True},
+  abbr={IROS},
+  abstract={It is important for autonomous vehicles to have the ability to infer the goals of other vehicles (goal recognition), in order to safely interact with other vehicles and predict their future trajectories. This is a difficult problem, especially in urban environments with interactions between many vehicles. Goal recognition methods must be fast to run in real time and make accurate inferences. As autonomous driving is safety-critical, it is important to have methods which are human interpretable and for which safety can be formally verified. Existing goal recognition methods for autonomous vehicles fail to satisfy all four objectives of being fast, accurate, interpretable and verifiable. We propose Goal Recognition with Interpretable Trees (GRIT), a goal recognition system which achieves these objectives. GRIT makes use of decision trees trained on vehicle trajectory data. We evaluate GRIT on two datasets, showing that GRIT achieved fast inference speed and comparable accuracy to two deep learning baselines, a planning-based goal recognition method, and an ablation of GRIT. We show that the learned trees are human interpretable and demonstrate how properties of GRIT can be formally verified using a satisfiability modulo theories (SMT) solver.},
+  author={Brewitt, Cillian and Gyevnar, Balint and Garcin, Samuel and Albrecht, Stefano V.},
+  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  title={GRIT: Fast, Interpretable, and Verifiable Goal Recognition with Learned Decision Trees for Autonomous Driving},
+  year={2021},
+  doi={10.1109/IROS51168.2021.9636279},
+  arXiv={2103.06113},
+  code={https://github.com/uoe-agents/GRIT}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@article{ahmed2022deep,
+  bibtex_show={True},
+  abbr={AI Commun.},
+  title={Deep reinforcement learning for multi-agent interaction},
+  abstract={The development of autonomous agents which can interact with other agents to accomplish a given task is a core area of research in artificial intelligence and machine learning. Towards this goal, the Autonomous Agents Research Group develops novel machine learning algorithms for autonomous systems control, with a specific focus on deep reinforcement learning and multi-agent reinforcement learning. Research problems include scalable learning of coordinated agent policies and inter-agent communication; reasoning about the behaviours, goals, and composition of other agents from limited observations; and sample-efficient learning based on intrinsic motivation, curriculum learning, causal inference, and representation learning. This article provides a broad overview of the ongoing research portfolio of the group and discusses open problems for future directions.},
+  author={Ahmed, Ibrahim H and Brewitt, Cillian and Carlucho, Ignacio and Christianos, Filippos and Dunion, Mhairi and Fosong, Elliot and Garcin, Samuel and Guo, Shangmin and Gyevnar, Balint and McInroe, Trevor and others},
+  journal={AI Communications},
+  number={Preprint},
+  pages={1--12},
+  year={2022},
+  publisher={IOS Press},
+  arXiv={2208.01769}
 }
