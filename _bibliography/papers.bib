@@ -1,17 +1,30 @@
 ---
 ---
 
-@article{garcin2023level,
-  abbr={Preprint},
+@inproceedings{garcin2024dred,
+  abbr={ICML},
+  bibtex_show={true},
+  title={DRED: Zero-Shot Transfer in Reinforcement Learning via Data-Regularised Environment Design},
+  author={Garcin, Samuel and Doran, James and Guo, Shangmin and Lucas, Christopher G and Albrecht, Stefano V},
+  booktitle={Forty-first International Conference on Machine Learning},
+  year={2024},
+  abstract={Autonomous agents trained using deep reinforcement learning (RL) often lack the ability to successfully generalise to new environments, even when these environments share characteristics with the ones they have encountered during training. In this work, we investigate how the sampling of individual environment instances, or levels, affects the zero-shot generalisation (ZSG) ability of RL agents. We discover that, for deep actor-critic architectures sharing their base layers, prioritising levels according to their value loss minimises the mutual information between the agent's internal representation and the set of training levels in the generated training data. This provides a novel theoretical justification for the regularisation achieved by certain adaptive sampling strategies. We then turn our attention to unsupervised environment design (UED) methods, which assume control over level generation. We find that existing UED methods can significantly shift the training distribution, which translates to low ZSG performance. To prevent both overfitting and distributional shift, we introduce data-regularised environment design (DRED). DRED generates levels using a generative model trained to approximate the ground truth distribution of an initial set of level parameters. Through its grounding, DRED achieves significant improvements in ZSG over adaptive level sampling strategies and UED methods.},
+  arXiv={2402.03479},
+  poster={dred_icml24/Poster_DRED_ICML24.pdf},
+  code={https://github.com/uoe-agents/dred},
+  selected={true},
+}
+
+@article{,
+  abbr={Workshop},
   bibtex_show={true},
   title={How the level sampling process impacts zero-shot generalisation in deep reinforcement learning},
   author={Garcin, Samuel and Doran, James and Guo, Shangmin and Lucas, Christopher G and Albrecht, Stefano V},
-  journal={Under review},
-  year={2024},
+  journal={NeurIPS ALOE Workshop},
+  year={2023},
   abstract={A key limitation preventing the wider adoption of autonomous agents trained via deep reinforcement learning (RL) is their limited ability to generalise to new environments, even when these share similar characteristics with environments encountered during training. In this work, we investigate how a non-uniform sampling strategy of individual environment instances, or levels, affects the zero-shot generalisation (ZSG) ability of RL agents, considering two failure modes: overfitting and over-generalisation. As a first step, we measure the mutual information (MI) between the agent's internal representation and the set of training levels, which we find to be well-correlated to instance overfitting. In contrast to uniform sampling, adaptive sampling strategies prioritising levels based on their value loss are more effective at maintaining lower MI, which provides a novel theoretical justification for this class of techniques. We then turn our attention to unsupervised environment design (UED) methods, which adaptively generate new training levels and minimise MI more effectively than methods sampling from a fixed set. However, we find UED methods significantly shift the training distribution, resulting in over-generalisation and worse ZSG performance over the distribution of interest. To prevent both instance overfitting and over-generalisation, we introduce self-supervised environment design (SSED). SSED generates levels using a variational autoencoder, effectively reducing MI while minimising the shift with the distribution of interest, and leads to statistically significant improvements in ZSG over fixed-set level sampling strategies and UED methods.},
   arXiv={2310.03494},
-  poster={ssed_iclr24/Poster_SSED_ALOE_neurips23.pdf},
-  selected={true}
+  poster={dred_neurips23_aloe/Poster_DRED_neurips23_ALOE.pdf},
 }
 
 @article{9143181,
