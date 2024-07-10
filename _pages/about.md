@@ -12,10 +12,10 @@ profile:
   more_info: >
     <p>S[DOT]GARCIN[AT]ED.AC.UK</p>
 
-news: true  # includes a list of news items
-latest_posts: false  # includes a list of the newest posts
+news: true # includes a list of news item
+[//]: # (latest_posts: false # includes a list of the latest posts)
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 ---
 
 I am a PhD candidate and a member of the [Autonomous Agents Research Group](https://agents.inf.ed.ac.uk/) at the University of Edinburgh. I am fortunate to be co-advised by [Stefano Albrecht](https://agents.inf.ed.ac.uk/stefano-albrecht/) and [Chris Lucas](https://lucaslab-uoe.github.io/members/chris/). Before starting my PhD I completed an MEng in Aeronautics at Imperial College London, where I started the [Imperial College Aerial Vehicle project](https://icavproject.wordpress.com), and then worked three years in the aerial robotics industry. I have been previously involved in [multi-agent robotic navigation](https://ieeexplore.ieee.org/abstract/document/9143181) and [autonomous](https://github.com/uoe-agents/IGP2) [vehicles](https://ieeexplore.ieee.org/abstract/document/9636279) research projects.
@@ -38,3 +38,4 @@ I organise our group's virtual [Reinforcement Learning Reading Group](https://ag
 [//]: # (subtitle: <p style="color:var&#40;--global-theme-color&#41;;">PhD candidate at the University of Edinburgh, Robotics and Autonomous systems CDT</p>)
 
 [//]: # (subtitle: **PhD candidate at the University of Edinburgh, Robotics and Autonomous systems CDT**)
+[//]: # (Link to your social media connections, too. This theme is set up to use [Font Awesome icons]&#40;https://fontawesome.com/&#41; and [Academicons]&#40;https://jpswalsh.github.io/academicons/&#41;, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.)
