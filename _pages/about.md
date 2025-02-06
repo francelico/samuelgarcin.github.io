@@ -12,11 +12,20 @@ profile:
   more_info: >
     <p>S[DOT]GARCIN[AT]ED.AC.UK</p>
 
-news: true # includes a list of news item
-[//]: # (latest_posts: false # includes a list of the latest posts)
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
+
+announcements:
+  enabled: true # includes a list of news items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 5 # leave blank to include all the news in the `_news` folder
+
+latest_posts:
+  enabled: false
+  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  limit: 3 # leave blank to include all the blog posts
 ---
+
 
 I am a PhD candidate and a member of the [Autonomous Agents Research Group](https://agents.inf.ed.ac.uk/) at the University of Edinburgh. I am fortunate to be co-advised by [Stefano Albrecht](https://agents.inf.ed.ac.uk/stefano-albrecht/) and [Chris Lucas](https://lucaslab-uoe.github.io/members/chris/). Before starting my PhD I completed an MEng in Aeronautics at Imperial College London, where I started the [Imperial College Aerial Vehicle project](https://icavproject.wordpress.com), and then worked three years in the aerial robotics industry. I have been previously involved in [multi-agent robotic navigation](https://ieeexplore.ieee.org/abstract/document/9143181) and [autonomous](https://github.com/uoe-agents/IGP2) [vehicles](https://ieeexplore.ieee.org/abstract/document/9636279) research projects.
 
