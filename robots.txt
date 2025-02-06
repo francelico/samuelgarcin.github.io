@@ -1,4 +1,1 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://samuelgarcin.github.io/samuelgarcin.github.io//sitemap.xml
+User-agent: * Disallow: Sitemap: https://samuelgarcin.github.io/samuelgarcin.github.io//sitemap.xml
