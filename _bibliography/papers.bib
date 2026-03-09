@@ -1,9 +1,80 @@
 ---
 ---
 
+@article{garcin2026pixelhistoriesworldmodels,
+  abbr={Under review},
+  bibtex_show={True},
+  arXiv={2603.03482},
+  code={https://github.com/francelico/PERSIST},
+  website={https://francelico.github.io/persist.github.io/},
+  pdf={https://arxiv.org/pdf/2603.03482.pdf},
+  abstract={Interactive world models continually generate video by responding to a user's actions, enabling open-ended generation capabilities. However, existing models typically lack a 3D representation of the environment, meaning 3D consistency must be implicitly learned from data, and spatial memory is restricted to limited temporal context windows. This results in an unrealistic user experience and presents significant obstacles to down-stream tasks such as training agents. To address this, we present PERSIST, a new paradigm of world model which simulates the evolution of a latent 3D scene: environment, camera, and renderer. This allows us to synthesize new frames with persistent spatial memory and consistent geometry. Both quantitative metrics and a qualitative user study show substantial improvements in spatial memory, 3D consistency, and long-horizon stability over existing methods, enabling coherent, evolving 3D worlds. We further demonstrate novel capabilities, including synthesising diverse 3D environments from a single image, as well as enabling fine-grained, geometry-aware control over generated experiences by supporting environment editing and specification directly in 3D space.},
+  author = {Samuel Garcin and Thomas Walker and Steven McDonagh and Tim Pearce and Hakan Bilen and Tianyu He and Kaixin Wang and Jiang Bian},
+  journal = {ArXiv preprint},
+  title = {Beyond Pixel Histories: World Models with Persistent 3D State},
+  url = {https://arxiv.org/abs/2603.03482},
+  volume = {abs/2603.03482},
+  year = {2026},
+  selected={true},
+}
+
+@article{tomilin2025meal,
+  abbr={Under review},
+  bibtex_show={True},
+  arXiv={2506.14990},
+  code={https://github.com/TTomilin/MEAL},
+  pdf={https://arxiv.org/pdf/2506.14990.pdf},
+  title={MEAL: a benchmark for continual multi-agent reinforcement learning},
+  abstract={Benchmarks play a crucial role in the development and analysis of reinforcement learning (RL) algorithms, with environment availability strongly impacting research. One particularly underexplored intersection is continual learning (CL) in cooperative multi-agent settings. To remedy this, we introduce MEAL (Multi-agent Environments for Adaptive Learning), the first benchmark tailored for continual multi-agent reinforcement learning (CMARL). Existing CL benchmarks run environments on the CPU, leading to computational bottlenecks and limiting the length of task sequences. MEAL leverages JAX for GPU acceleration, enabling continual learning across sequences of 100 tasks on a standard desktop PC in a few hours. We show that naively combining popular CL and MARL methods yields strong performance on simple environments, but fails to scale to more complex settings requiring sustained coordination and adaptation. Our ablation study identifies architectural and algorithmic features critical for CMARL on MEAL.},
+  author={Tomilin, Tristan and Boogaard, Luka van den and Garcin, Samuel and Grooten, Bram and Fang, Meng and Du, Yali and Pechenizkiy, Mykola},
+  journal={arXiv preprint arXiv:2506.14990},
+  year={2025}
+}
+
+@inproceedings{DBLP:conf/iclr/GarcinMCLAPA25,
+  abbr={ICLR},
+  bibtex_show={True},
+  arXiv={2503.06343},
+  code={https://github.com/francelico/deac-rep},
+  pdf={https://arxiv.org/pdf/2503.06343.pdf},
+  abstract={Extracting relevant information from a stream of high-dimensional observations is a central challenge for deep reinforcement learning agents. Actor-critic algorithms add further complexity to this challenge, as it is often unclear whether the same information will be relevant to both the actor and the critic. To this end, we here explore the principles that underlie effective representations for the actor and for the critic in on-policy algorithms. We focus our study on understanding whether the actor and critic will benefit from separate, rather than shared, representations. Our primary finding is that when separated, the representations for the actor and critic systematically specialise in extracting different types of information from the environment -- the actor's representation tends to focus on action-relevant information, while the critic's representation specialises in encoding value and dynamics information. We conduct a rigourous empirical study to understand how different representation learning approaches affect the actor and critic's specialisations and their downstream performance, in terms of sample efficiency and generation capabilities. Finally, we discover that a separated critic plays an important role in exploration and data collection during training. Our code, trained models and data are accessible at https://github.com/francelico/deac-rep. },
+  author       = {Samuel Garcin and
+                  Trevor McInroe and
+                  Pablo Samuel Castro and
+                  Christopher G. Lucas and
+                  David Abel and
+                  Prakash Panangaden and
+                  Stefano V. Albrecht},
+  title        = {Studying the Interplay Between the Actor and Critic Representations
+                  in Reinforcement Learning},
+  booktitle    = {The Thirteenth International Conference on Learning Representations,
+                  {ICLR} 2025, Singapore, April 24-28, 2025},
+  publisher    = {OpenReview.net},
+  year         = {2025},
+  url          = {https://openreview.net/forum?id=tErHYBGlWc},
+  timestamp    = {Thu, 15 May 2025 17:19:06 +0200},
+  biburl       = {https://dblp.org/rec/conf/iclr/GarcinMCLAPA25.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+  selected = {true},
+}
+
+@article{mcinroe2025pixelbrax,
+  abbr={RLDM},
+  bibtex_show={True},
+  arXiv={2502.00021},
+  code={https://github.com/trevormcinroe/pixelbrax},
+  pdf={https://arxiv.org/pdf/2502.00021.pdf},
+  abstract={We present PixelBrax, a set of continuous control tasks with pixel observations. We combine the Brax physics engine with a pure JAX renderer, allowing reinforcement learning (RL) experiments to run end-to-end on the GPU. PixelBrax can render observations over thousands of parallel environments and can run two orders of magnitude faster than existing benchmarks that rely on CPU-based rendering. Additionally, PixelBrax supports fully reproducible experiments through its explicit handling of any stochasticity within the environments and supports color and video distractors for benchmarking generalization. We open-source PixelBrax alongside JAX implementations of several RL algorithms at https://github.com/trevormcinroe/pixelbrax.},
+  title={PixelBrax: Learning Continuous Control from Pixels End-to-End on the GPU},
+  author={McInroe, Trevor and Garcin, Samuel},
+  journal={arXiv preprint arXiv:2502.00021},
+  year={2025},
+}
+
 @inproceedings{garcin2024dred,
   abbr={ICML},
   bibtex_show={true},
+  pdf={https://arxiv.org/pdf/2402.03479.pdf},
   title={DRED: Zero-Shot Transfer in Reinforcement Learning via Data-Regularised Environment Design},
   author={Garcin, Samuel and Doran, James and Guo, Shangmin and Lucas, Christopher G and Albrecht, Stefano V},
   booktitle={Forty-first International Conference on Machine Learning},
@@ -18,6 +89,7 @@
 @article{garcin2023level,
   abbr={Workshop},
   bibtex_show={true},
+  pdf={https://arxiv.org/pdf/2310.03494.pdf},
   title={How the level sampling process impacts zero-shot generalisation in deep reinforcement learning},
   author={Garcin, Samuel and Doran, James and Guo, Shangmin and Lucas, Christopher G and Albrecht, Stefano V},
   journal={NeurIPS ALOE Workshop},
@@ -39,12 +111,13 @@
   number={4},
   pages={1750-1757},
   doi={10.1109/TCST.2020.3005602},
-  pdf={https://spiral.imperial.ac.uk/bitstream/10044/1/81127/2/FINAL%20VERSION.pdf},
+  pdf={https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9143181},
 }
 
 @inproceedings{9636279,
   bibtex_show={True},
   abbr={IROS},
+  pdf={https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9636279},
   abstract={It is important for autonomous vehicles to have the ability to infer the goals of other vehicles (goal recognition), in order to safely interact with other vehicles and predict their future trajectories. This is a difficult problem, especially in urban environments with interactions between many vehicles. Goal recognition methods must be fast to run in real time and make accurate inferences. As autonomous driving is safety-critical, it is important to have methods which are human interpretable and for which safety can be formally verified. Existing goal recognition methods for autonomous vehicles fail to satisfy all four objectives of being fast, accurate, interpretable and verifiable. We propose Goal Recognition with Interpretable Trees (GRIT), a goal recognition system which achieves these objectives. GRIT makes use of decision trees trained on vehicle trajectory data. We evaluate GRIT on two datasets, showing that GRIT achieved fast inference speed and comparable accuracy to two deep learning baselines, a planning-based goal recognition method, and an ablation of GRIT. We show that the learned trees are human interpretable and demonstrate how properties of GRIT can be formally verified using a satisfiability modulo theories (SMT) solver.},
   author={Brewitt, Cillian and Gyevnar, Balint and Garcin, Samuel and Albrecht, Stefano V.},
   booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
@@ -66,5 +139,6 @@
   pages={1--12},
   year={2022},
   publisher={IOS Press},
-  arXiv={2208.01769}
+  arXiv={2208.01769},
+  pdf={https://arxiv.org/pdf/2208.01769.pdf},
 }
