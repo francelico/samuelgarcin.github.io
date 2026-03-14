@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <b>PhD candidate at the University of Edinburgh, Robotics and Autonomous systems CDT</b>
+subtitle: <b>Final Year PhD candidate at the University of Edinburgh</b>
 
 
 profile:
@@ -26,10 +26,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-My PhD research explores the relationships between deep reinforcement learning models and the mechanisms that generate their training data, under the guidance of [David Abel](https://david-abel.github.io/) and [Chris Lucas](https://lucaslab-uoe.github.io/members/chris/).
+My PhD studies how reinforcement learning (RL) systems can become less dependent on traditional simulators, under the guidance of [David Abel](https://david-abel.github.io/) and [Chris Lucas](https://lucaslab-uoe.github.io/members/chris/). RL faces a _simulation bottleneck_: training agents typically requires bespoke simulators (which are costly to build) and large numbers of diverse training scenarios (which are difficult to scale). 
 
-Before starting my PhD, I studied Aeronautics at Imperial College London, where I co-founded and led the [Imperial College Aerial Vehicle project](https://icavproject.wordpress.com). Following this, I spent three years in the robotics industry, working across various [robotic](https://ieeexplore.ieee.org/abstract/document/9143181) [and](https://www.thetimes.com/article/armed-drone-is-a-real-street-fighter-5j0vvk3vx) [autonomous](https://thebusinessmagazine.co.uk/companies/the-small-robot-company-to-transform-agriculture/) [vehicle](https://github.com/uoe-agents/IGP2) [projects](https://ieeexplore.ieee.org/abstract/document/9636279). Currently, I am  completing a research internship at Microsoft Research Beijing, mentored by [Kaixin Wang](https://kaixin96.github.io/).
+My work explores generative approaches for alleviating this bottleneck. In [Data-Regularised Environment Design](https://arxiv.org/abs/2402.03479), we train generative models to produce synthetic training scenarios from a limited starting set. At the core of my recent work are _world models_: simulators that can be learned directly from data. [PERSIST](https://francelico.github.io/persist.github.io/) is a world model maintaining a 3D representation of the environment to generate coherent interactive simulations. In [prior work](https://openreview.net/forum?id=tErHYBGlWc) I analysed the overfitting mechanisms of modern actor-critic RL algorithms and architectures. I also helped develop JAX-based benchmarks for studying generalisation and adaptivity in RL ([PixelBrax](https://arxiv.org/abs/2502.00021), [MEAL](https://arxiv.org/abs/2506.14990)).
 
-My recent work focuses on harnessing generative models to enhance RL agent training. This can be done by having these models [control the environment instantiation process](https://arxiv.org/abs/2402.03479) and shape the agent's training distribution. At Microsoft, I am investigating the training of RL agents within "world models", generative models that act as neural simulators of the environment. Complementing this research, our [recent study](https://openreview.net/forum?id=tErHYBGlWc) on information specialisation in actor-critic models brings into focus particular interactions that only occur in learning systems that influence their own training distribution. I find this aspect of online RL to be fascinating and a source of inspiration for my future research.
+Before starting my PhD, I spent three years in the robotics industry working on [autonomous drones](https://www.thetimes.com/article/armed-drone-is-a-real-street-fighter-5j0vvk3vx) and [agricultural robots](https://www.fwi.co.uk/business/hundreds-of-farmers-invest-in-small-robot-company). I previously studied Aeronautics at Imperial College London (MEng), where I also co-founded the [Imperial College Aerial Vehicle project](https://icavproject.wordpress.com).
 
-I am _always_ interested in collaboration opportunities! I co-organise UoE's virtual [Reinforcement Learning Reading Group](https://agents.inf.ed.ac.uk/reading-group/), do reach out if you would like to come present your work.
+I am on the job market for Spring-Summer 2026.
